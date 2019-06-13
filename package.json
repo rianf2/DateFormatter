@@ -4,11 +4,13 @@
   "description": "An API to format dates given by user input",
   "main": "dateformatter.js",
   "scripts": {
+    "pretest": "eslint dateformatter.js",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^5.16.0",
     "jest": "^24.8.0"
   }
 }
