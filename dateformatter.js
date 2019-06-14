@@ -1,16 +1,19 @@
 "use strict";
 
 const today = new Date();
+const singleDigitTester = 10;
 
 exports.getDate = function(dateString) {
+	const monthOffset = 1;
+
 	let date = today.getDate();
-	let month = today.getMonth() + 1;
+	let month = today.getMonth() + monthOffset;
 	let year = today.getFullYear();
 
 	dateString = dateString.toLowerCase();
 
-	if(date < 10) { date = "0" + date; }
-	if(month < 10) { month = "0" + month; }
+	date < singleDigitTester ? date = "0" + date : date;
+	month < singleDigitTester ?  month = "0" + month : month;
 
 	dateString = dateString.replace("dd", date);
 	dateString = dateString.replace("mm", month);
@@ -26,8 +29,8 @@ exports.getTime = function(timeString) {
 
     timeString = timeString.toLowerCase();
 
-    if(minutes < 10) { minutes = "0" + minutes; }
-    if(seconds < 10) { seconds = "0" + seconds; }
+    minutes < singleDigitTester ?  minutes = "0" + minutes : minutes;
+    seconds < singleDigitTester ?  seconds = "0" + seconds : seconds;
 
     timeString = timeString.replace("hh", hours);
 	timeString = timeString.replace("min", minutes);
@@ -37,7 +40,10 @@ exports.getTime = function(timeString) {
 };
 
 exports.getDateTime = function(dateTimeString) {
-	let date = dateTimeString.substring(0, 10);
-	let time = dateTimeString.substring(11, dateTimeString.length);
+	const dateStringLastPosition = 10;
+	const timeStringBeginningPosition = 11;
+
+	let date = dateTimeString.substring(0, dateStringLastPosition);
+	let time = dateTimeString.substring(timeStringBeginningPosition, dateTimeString.length);
 	return this.getDate(date) + " " + this.getTime(time);
 };
