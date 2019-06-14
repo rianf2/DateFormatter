@@ -15,7 +15,7 @@
     "rules": {
     	"semi": ["error", "always"],
 	"quotes": ["error", "double"],
-	"no-useless-return": ["error", "always"],
+	"no-useless-return": ["error"],
 	"strict": ["error", "always"],
 	"default-case": ["error", "always"],
 	"yoda": ["error", "always"],
