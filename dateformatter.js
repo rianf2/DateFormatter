@@ -1,3 +1,5 @@
+"use strict";
+
 const today = new Date();
 
 exports.getDate = function(dateString) {
