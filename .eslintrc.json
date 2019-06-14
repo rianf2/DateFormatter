@@ -17,8 +17,8 @@
 	"quotes": ["error", "double"],
 	"no-useless-return": ["error"],
 	"strict": ["error"],
-	"default-case": ["error", "always"],
-	"yoda": ["error", "always"],
-	"no-console": ["error", "always"]
+	"default-case": ["error"],
+	"yoda": ["error"],
+	"no-console": ["error"]
     }
 }
