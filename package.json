@@ -1,16 +1,24 @@
 {
   "name": "@bolzak/dateformatter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An API to format dates given by user input",
   "main": "dateformatter.js",
   "scripts": {
     "pretest": "eslint dateformatter.js",
     "test": "jest"
   },
-  "author": "",
+  "author": "rianf2",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^5.16.0",
     "jest": "^24.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rianf2/DateFormatter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rianf2/DateFormatter/issues"
+  },
+  "homepage": "https://github.com/rianf2/DateFormatter"
 }
