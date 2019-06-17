@@ -1,6 +1,6 @@
 {
   "name": "@bolzak/dateformatter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An API to format dates given by user input",
   "main": "dateformatter.js",
   "scripts": {
