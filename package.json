@@ -20,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/rianf2/DateFormatter/issues"
   },
-  "homepage": "https://github.com/rianf2/DateFormatter"
+  "homepage": "https://github.com/rianf2/DateFormatter",
+  "keywords": [
+    "date",
+    "time",
+    "datetime",
+    "day",
+    "month",
+    "year",
+    "hours",
+    "minutes",
+    "seconds",
+    "formatter",
+    "formatting"
+  ]
 }
